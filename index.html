@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DiGency | Home</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="DiGency | Digital Agency">
+    <meta name="description" content="">
+    <meta name="keywords" content="...">
+    <meta name="author" content="...">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+    <meta name="creationdate" content="May 22, 2019">
+    <meta name="distribution" content="global">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Niramit:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Niramit:400,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 5 Free -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- WOW stylesheet -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <!-- lightbox gallery CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.css" />
+    <!-- magnific popup stylesheet -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- required stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    
+    <!-- Preloader markup -->
+    <div class="preloader" id="preloader">
+        <div class="loader-contain">
+            <img src="images/Spinner-1s-200px.gif" alt="Loading">
+        </div>
+    </div>
+    <!-- preloader javascript -->
+    <script>
+        var overlay = document.getElementById("preloader");
+        window.addEventListener('load', function(){
+            overlay.style.visibility = 'hidden';
+            overlay.style.opacity = '0';
+            overlay.style.transform = 'translateY(-100%)';
+        })
+    </script>
+
+    <!-- for the bg shade-->
+    <div class="on-focus-shade"></div>
+
+    <header id="header">
+        <div class="nav-logo">
+            <a href="index.html">DiGency.</a>
+        </div>
+        
+        <a href="javascript:void(0)" class="nav-trigger"><i class="fas fa-bars"></i></a>
+
+        <div class="nav-links text-uppercase">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a> |
+            <a href="javascript:void(0);" class="search-trigger"><i class="fas fa-search"></i></a>
+        </div>
+    </header> <!-- /.hero-area -->
+
+    <div class="mobile-nav text-uppercase">
+        <button class="mobile-nav-close"><i class="fas fa-times"></i></button>
+        <div class="mobile-nav-wrap">
+            <a href="javascript:void(0)" class="search-on-mobile">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div> <!-- /.mobile-nav -->
+
+    <section class="hero-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background: url('images/home-hero-1.jpg')">
+                    <div class="slider-content">
+                        <h1>We combine design and creative ideas and craft</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a libero eaque amet 
+                            esse molestias, commodi perferendis vel sit officia, maxime illum reprehenderit pariatur
+                        </p>
+                        <div class="hero-btn">
+                            <a href="#" class="primary-btn">Download Now</a>
+                            <a href="#" class="secondary-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.swiper-slide -->
+
+                <div class="swiper-slide" style="background: url('images/home-hero-2.jpg')">
+                    <div class="slider-content">
+                        <h1>We combine design and creative ideas and craft</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a libero eaque amet 
+                            esse molestias, commodi perferendis vel sit officia, maxime illum reprehenderit pariatur
+                        </p>
+                        <div class="hero-btn">
+                            <a href="#" class="primary-btn">Download Now</a>
+                            <a href="#" class="secondary-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.swiper-slide -->
+
+                <div class="swiper-slide" style="background: url('images/home-hero-3.jpg')">
+                    <div class="slider-content">
+                        <h1>We combine design and creative ideas and craft</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a libero eaque amet 
+                            esse molestias, commodi perferendis vel sit officia, maxime illum reprehenderit pariatur
+                        </p>
+                        <div class="hero-btn">
+                            <a href="#" class="primary-btn">Download Now</a>
+                            <a href="#" class="secondary-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.swiper-slide -->
+            </div> <!-- /.swiper-wrapper -->
+        </div> <!-- /.swiper-container -->
+    </section>
+
+    <div class="search-screen">
+        <div class="search-screen-close"><i class="fas fa-times"></i></div>
+        <form action="index.html">
+            <input type="search" placeholder="I am looking for.." autofocus>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <section class="about wow fadeInUp"
+            data-wow-duration="1s" 
+            data-wow-offset="200"
+            data-wow-iteration="1">
+        <div class="single-work">
+            <div class="single-work-title">
+                <h3>01.</h3>
+                <span>
+                    Creativity. <br>
+                    Discover talent.
+                </span>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates vero numquam magni ab nostrum. Veniam sit aut 
+                autem maiores ipsum, aperiam quod mollitia tenetur corporis, 
+                perspiciatis, laudantium labore minima dolores.
+            </p>
+        </div> <!-- /.single-work -->
+        
+        <div class="single-work">
+            <div class="single-work-title">
+                <h3>02.</h3>
+                <span>
+                    Creativity. <br>
+                    Discover talent.
+                </span>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates vero numquam magni ab nostrum. Veniam sit aut 
+                autem maiores ipsum, aperiam quod mollitia tenetur corporis, 
+                perspiciatis, laudantium labore minima dolores.
+            </p>
+        </div> <!-- /.single-work -->
+        
+        <div class="single-work">
+            <div class="single-work-title">
+                <h3>03.</h3>
+                <span>
+                    Creativity. <br>
+                    Discover talent.
+                </span>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates vero numquam magni ab nostrum. Veniam sit aut 
+                autem maiores ipsum, aperiam quod mollitia tenetur corporis, 
+                perspiciatis, laudantium labore minima dolores.
+            </p>
+        </div> <!-- /.single-work -->
+    </section>
+
+    <section class="products">
+        <div class="product-img"></div>
+        <div class="product-content">
+            <h2 class="section-title">What are we doing for you</h2>
+
+            <div class="product-wrap">
+                <div class="single-product wow fadeInUp"
+                        data-wow-duration="1s">
+                    <div class="product-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="product-detail">
+                        <h5 class="content-title">Fully Responsive</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur placeat repellendus, 
+                            cupiditate magnam odio reiciendis deleniti. Iste, sequi officia.
+                        </p>
+                    </div>
+                </div> <!-- /.single-product -->
+
+                <div class="single-product wow fadeInUp"
+                        data-wow-duration="1s">
+                    <div class="product-icon"><i class="fas fa-desktop"></i></div>
+                    <div class="product-detail">
+                        <h5 class="content-title">Cross Browser Support</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur placeat repellendus, 
+                            cupiditate magnam odio reiciendis deleniti. Iste, sequi officia.
+                        </p>
+                    </div>
+                </div> <!-- /.single-product -->
+                
+                <div class="single-product wow fadeInUp"
+                        data-wow-duration="1s">
+                    <div class="product-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="product-detail">
+                        <h5 class="content-title">Different Layout Types</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequuntur placeat repellendus, 
+                            cupiditate magnam odio reiciendis deleniti. Iste, sequi officia.
+                        </p>
+                    </div>
+                </div> <!-- /.single-product -->
+
+                <div class="single-product wow fadeInUp"
+                        data-wow-duration="1s">
+                    <div class="product-icon"><i class="fas fa-code"></i></div>
+                    <div class="product-detail">
+                        <h5 class="content-title">Easily Readable Code</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                            cupiditate magnam odio reiciendis deleniti. Iste, sequi officia.
+                        </p>
+                    </div>
+                </div> <!-- /.single-product -->
+            </div> <!-- /.product-wrap -->
+        </div>
+    </section>
+
+    <section class="accomplished">
+        <div class="acc-wrap">
+            <div class="single-acc wow fadeInUp"
+                    data-wow-duration="0.5s"
+                    data-wow-iteration="1">
+                <div class="acc-icon"><i class="far fa-heart"></i></div>
+                <h2 class="timer" data-from="2000" data-to="4561">4561</h2>
+                <p>Happy Clients</p>
+            </div> <!-- /.single-acc -->
+
+            <div class="single-acc wow fadeInUp"
+                    data-wow-duration="0.9s"
+                    data-wow-iteration="1">
+                <div class="acc-icon"><i class="fas fa-desktop"></i></div>
+                <h2 class="timer" data-from="2000" data-to="2221">2221</h2>
+                <p>Projects Completed</p>
+            </div> <!-- /.single-acc -->
+
+            <div class="single-acc wow fadeInUp"
+                    data-wow-duration="1.3s"
+                    data-wow-iteration="1">
+                <div class="acc-icon"><i class="far fa-file-code"></i></div>
+                <h2 class="timer" data-from="2000" data-to="5458">5458</h2>
+                <p>UI Designed</p>
+            </div> <!-- /.single-acc -->
+
+            <div class="single-acc wow fadeInUp"
+                    data-wow-duration="1.7s"
+                    data-wow-iteration="1">
+                <div class="acc-icon"><i class="far fa-comments"></i></div>
+                <h2 class="timer" data-from="2000" data-to="2155">2155</h2>
+                <p>Customer Support</p>
+            </div> <!-- /.single-acc -->
+        </div>
+    </section>
+
+    <section class="projects" id="portfolio">
+        <h5 class="mini-title">Our Latest Works</h5>
+        <h2 class="section-title">Awesome projects for amazing clients</h2>
+
+        <div class="projects-wrap" id="lightgallery">
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-1.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-1.jpg">
+                        <a href="images/port-1.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Pinewood Inc.</a>
+                    <p>Hotel and restaurant</p>
+                </div>
+            </div> <!-- /.single-project-->
+
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-2.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-2.jpg">
+                        <a href="images/port-2.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Tesla Inc.</a>
+                    <p>Automobile Industry</p>
+                </div>
+            </div> <!-- /.single-project-->
+            
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-3.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-3.jpg">
+                        <a href="images/port-3.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Tiffany & Co.</a>
+                    <p>Beauty and Jwellery</p>
+                </div>
+            </div> <!-- /.single-project-->
+
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-4.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-4.jpg">
+                        <a href="images/port-4.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Mega Inc.</a>
+                    <p>Web and Application</p>
+                </div>
+            </div> <!-- /.single-project-->
+
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-5.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-5.jpg">
+                        <a href="images/port-5.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Spotify Inc.</a>
+                    <p>Music Industry</p>
+                </div>
+            </div> <!-- /.single-project-->
+
+            <div class="single-project">
+                <div class="portfolio-img">
+                    <img src="images/port-6.jpg" alt="portfolio">
+                    <div class="portfolio-icons" data-src="images/port-6.jpg">
+                        <a href="images/port-6.jpg"><i class="fas fa-search" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <a href="#">Litore House</a>
+                    <p>Hotel and Resort</p>
+                </div>
+            </div> <!-- /.single-project-->
+        </div> <!-- /.projects-wrap -->
+    </section>
+
+    <section class="services">
+        <div class="service-vid">
+            <a href="https://www.youtube.com/watch?v=fBbOgrbpF5E" class="video-play-btn mfp-iframe">
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+        <div class="services-content">
+            <h1 class="section-title">Get the high quality services</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab veniam aperiam 
+                quasi, voluptate, eaque optio repellendus deserunt culpa sit dignissimos 
+                tempore laboriosam. Ipsam provident quas fuga, saepe autem cupiditate perferendis 
+                ipsum mollitia, nesciunt eos facere architecto! Delectus ipsam sint at.
+            </p>
+            <a href="services.html" class="primary-btn">Explore services</a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-text">
+            <h1 class="section-title">Looking for the best deal?</h1>
+        </div>
+        <div class="cta-btn">
+            <a href="#" class="primary-btn">Download Now</a>
+        </div>
+    </section>
+
+    <section class="blogs">
+        <h5 class="mini-title">Latest Blogs</h5>
+        <h2 class="section-title">Discover our awesome content</h2>
+
+        <div class="blog-wrap">
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/port-5.jpg" alt="blog post">
+                    <div class="blog-icons">
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <a href="#">Recognizing the need is the primary condition for design</a>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...
+                    </p> <hr>
+                </div>
+                <div class="blog-info">
+                    <p>
+                        By <a href="#">Alex Crowley</a>
+                        <span> | 17 May, 2019</span>
+                    </p>
+                </div>
+            </div> <!-- /.single-blog-->
+
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/port-2.jpg" alt="blog post">
+                    <div class="blog-icons">
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <a href="#">Recognizing the need is the primary condition for design</a>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...
+                    </p> <hr>
+                </div>
+                <div class="blog-info">
+                    <p>
+                        By <a href="#">John Doe</a>
+                        <span> | 20 May, 2019</span>
+                    </p> 
+                </div>
+            </div> <!-- /.single-blog-->
+
+            <div class="single-blog">
+                <div class="blog-img">
+                    <img src="images/port-1.jpg" alt="blog post">
+                    <div class="blog-icons">
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <a href="#">Recognizing the need is the primary condition for design</a>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy...
+                    </p> <hr>
+                </div>
+                <div class="blog-info">
+                    <p>
+                        By <a href="#">Jay Rogowsky</a>
+                        <span> | 25 May, 2019</span>
+                    </p>
+                </div>
+            </div> <!-- /.single-blog-->
+        </div> <!-- /.blog-wrap-->
+    </section>
+
+    <footer>
+        <div class="footer-infos">
+            <div class="brand-info">
+                <div class="footer-logo">
+                    <a href="index.html">DiGency.</a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti excepturi 
+                    ex aliquid incidunt rem molestias, soluta rerum ullam minima quos explicabo corporis.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div> <!-- /.brand-info -->
+
+            <div class="footer-contact">
+                <h5 class="mini-title">Contact info</h5>
+                <p>301 The Greenhouse, Custard Factory, London, E2 8DY. </p> <br>
+                <p>
+                    Email : <a class="mailgo" data-address="contact" data-domain="digency.com" href="#">contact@digency.com</a> <br>
+                    Phone : <a href="#">+00 123 CC XXXXX</a>
+                </p>
+            </div> <!-- /.footer-contact -->
+
+            <div class="location-map">
+                <h5 class="mini-title">Locate us</h5>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7381.581528113866!2d91.80911932333923!3d22.323751616006476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b5353672d5%3A0x7e873374534df3f1!2sAgrabad+Commercial+Area%2C+Chittagong!5e0!3m2!1sen!2sbd!4v1556903765290!5m2!1sen!2sbd" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div> <!-- /.location-map -->
+
+            <div class="footer-menu">
+                <h5 class="mini-title">Navigation</h5>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </div> <!-- /.footer-menu -->
+        </div> <!-- /.footer-infos -->
+        
+        <div class="copyright-section">
+            <p>
+                &copy; 2019 DiGency. All Rights Reserved.
+            </p>
+            <div class="terms-policy">
+                <a href="javascript:void(0);">Terms and Conditions</a> |
+                <a href="javascript:void(0);">Privacy Policy</a>
+            </div>
+        </div> <!-- /.copyright-section -->
+    </footer>
+
+    <!-- <button onclick="gototop()" id="top-btn" title="scroll to top"><i class="fas fa-arrow-up"></i></button> -->
+
+    <!-- javascript files -->
+    <!-- bootstrap Js CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- smooth scroll script -->
+
+    <!-- WOW js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Swiper slider CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- Count To Script -->
+    <script src="js/jquery.countTo.js"></script>
+    <script>
+        $('.timer').countTo({
+            speed: 5000,
+            refreshInterval: 50,
+        });
+    </script>
+    <!-- lightbox gallery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery({
+                thumbnail: false,
+                selector: '.portfolio-icons'
+            }); 
+        });
+    </script>
+    <!-- magnific popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Retina Ready script -->
+    <script src="js/retina.min.js"></script>
+    <!-- mail plugin -->
+    <script src="https://unpkg.com/mailgo@0.4.9/dist/mailgo.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+
+/* ============================
+
+CSS Index :::
+    -header CSS
+    -hero-area CSS
+    -services-info CSS
+    -about-info CSS
+    -testimonial section CSS
+
+==============================*/
+
+
+
+/* header CSS */
+
+header {
+    background: #f7f8fb !important;
+}
+
+
+/* hero-area CSS */
+
+section.hero-area {
+    height: 60vh;
+    margin-top: 70px;
+}
+.hero-container {
+    position: relative;
+    height: inherit;
+    background: #262727 url('../images/about-hero.jpg') no-repeat center;
+    background-size: cover !important;
+}
+.hero-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.5);
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1;
+}
+.hero-text h1 {
+    color: #f7f8fb;
+    font-family: 'Cormorant', serif;
+    font-size: 60px;
+    line-height: 1;
+}
+.hero-text ul li {
+    list-style: none;
+    display: inline-block;
+    color: #f7f8fb;
+}
+.hero-text ul li + li::before {
+    content: '/';
+    color: #f7f8fb;
+    margin: 10px;
+} 
+.hero-text ul li a {
+    color: #f7f8fb;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* responsive of hero-area */
+
+@media screen and (max-width: 768px) {
+
+    section.hero-area {
+        margin-top: 65px;
+    }
+    .hero-text {
+        left: 0;
+        width: auto;
+        margin: 0 50px;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    section.hero-area {
+        margin-top: 60px;
+    }
+    .hero-text {
+        margin: 0 30px;
+        text-align: center;
+        width: calc(100% - 60px);
+    }
+    .hero-text h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    section.hero-area {
+        margin-top: 54px;
+    }
+    .hero-text {
+        margin: 0 20px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* services-info CSS */
+
+.services-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 100px 100px;
+}
+.service-vid.one {
+    background: #262727 url("../images/about-services.jpg") no-repeat;
+    background-size: cover;
+}
+.service-vid.two {
+    background: #262727 url("../images/port-3.jpg") no-repeat;
+    background-size: cover;
+}
+
+/* responsive of services-info */
+
+@media screen and (max-width: 1080px) {
+    
+    .services-info {
+        grid-template-columns: repeat(2, 1fr);     
+    }
+    .services-content {
+        width: calc(200% + 50px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .services-info {
+        grid-template-columns: repeat(1, 1fr);     
+    }
+    .service-vid.two {
+        display: none;
+    }
+    .services-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .services-info {
+        padding: 100px 30px;
+    }
+    .services-content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .services-info {
+        padding: 100px 20px;
+    }
+}
+
+
+/* products CSS */
+
+.product-wrap {
+    grid-template-columns: repeat(1, 1fr);
+}
+.product-icon {
+    font-size: 30px;
+    line-height: 1;
+}
+
+/* responsive of products section */
+
+@media screen and (max-width: 480px) {
+
+    .product-icon {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* about-info CSS */
+
+.about-info {
+    background: #262727 url("../images/about-hero.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 100px;
+    position: relative;
+    color: #f7f8fb;
+    z-index: 1;
+}
+.about-info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 39, 39, 0.8);
+    z-index: -1;
+}
+.about-info-text {
+    text-align: center;
+}
+.about-info-text h2 {
+    margin: 10px 100px 30px 100px;
+}
+
+/* responsive of about-info section */
+
+@media screen and (max-width: 768px) {
+    .about-info {
+        padding: 100px 50px;
+    }
+    .about-info-text h2 {
+        margin: 10px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-info {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 20px) {
+    .about-info {
+        padding: 100px 20px;
+    }
+}
+
+
+/* testimonial section CSS */
+
+.testimonial {
+    padding: 100px 100px;
+}
+.testimonial h2 {
+    text-align: center;
+}
+.single-testimonial {
+    margin: 20px;
+    background: #306cdb;
+    color: #f7f8fb;
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+.slider-content p, .slider-content h5 {
+    opacity: 1;
+}
+.slider-content h5 a {
+    display: block;
+    color: #f7f8fb;
+    margin-bottom: 10px;
+}
+.slider-content h5 span {
+    opacity: 0.75;
+    font-weight: 300;
+}
+.slider-content hr {
+    border-color: #f7f8fb;
+}
+.client-img {
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.client-img img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: auto;
+    border: 5px solid #f7f8fb;
+    border-radius: 50%;
+    -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+}
+.single-testimonial:hover .client-img img {
+    border-width: 2px;
+}
+ul.slick-dots {
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(38, 39, 39, 0.2);
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+}
+.slick-dots li.slick-active {
+    background: #306cdb;
+}
+.slick-dots li:hover {
+    background: #306cdb;
+}
+.slick-dots li button {
+    visibility: hidden;
+}
+
+/* responsive of testimonial section */
+
+@media screen and (max-width: 768px) {
+    
+    .testimonial {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .testimonial {
+        padding: 100px 30px;
+    }
+    .single-testimonial {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .testimonial {
+        padding: 100px 20px;
+    }
+}
+

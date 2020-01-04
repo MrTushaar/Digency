@@ -1,0 +1,321 @@
+
+/* ============================
+
+CSS Index :::
+    -hero-area CSS
+    -contact-opts CSS
+    -contact-form CSS
+    -social-links-block CSS
+    -location-block CSS
+
+==============================*/
+
+
+
+/* hero-area CSS */
+
+.hero-container {
+    background: #262727 url('../images/teamcasual.jpg') no-repeat center center;
+    background-size: cover !important;
+}
+
+
+/* contact-opts CSS */
+
+.contact-opts {
+    padding: 100px 100px;
+}
+.contact-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+.contact-icon {
+    position: relative;
+    background: #306cdb;
+    width: 80px;
+    margin: auto;
+    height: 80px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.contact-icon::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    background: #306cdb21;
+    z-index: -1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.single-contact:hover .contact-icon::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.contact-icon img {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: auto;
+}
+.contact-infos h5 {
+    margin: 20px 0;
+    opacity: 1;
+}
+.contact-infos p {
+    text-align: center;
+}
+.contact-infos p a {
+    color: #262727;
+    opacity: 1;
+}
+.contact-infos p a:hover {
+    color: #306cdb;
+    opacity: 1;
+}
+
+/* responsive of contact-opts section */
+
+@media screen and (max-width: 960px) {
+        
+    .contact-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-opts {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .contact-opts {
+        padding: 100px 30px;
+    }
+    .contact-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .contact-opts {
+        padding: 100px 20px;
+    }
+}
+
+
+/* contact-form CSS */
+
+.contact-form {
+    background: #2627270c;
+    padding: 100px 100px;
+}
+.contact-form h1 {
+    text-align: center;
+}
+.contact-form input:not(.primary-btn), .contact-form select, .contact-form textarea {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid #2627273f;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    border-color: #262727
+}
+.contact-form input[name=name] {
+    width: 50%;
+}
+.contact-form input[name=number] {
+    width: calc(50% - 20px);
+    float: right;
+    margin-left: 20px;
+}
+.contact-form input[name=email] {
+    width: 50%;
+}
+.contact-form select {
+    position: relative;
+    width: calc(50% - 20px);
+    float: right;
+    margin-left: 20px;
+    opacity: 0.75;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+}
+.contact-form select::after {
+    position: absolute;
+    content: '\f078';
+    font-family: Font Awesome Free;
+    top: 0;
+    right: 20px;
+    color: #262727;
+}
+.contact-form textarea {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+}
+.contact-form input.primary-btn {
+    display: block;
+    padding: 10px 20px;
+    margin-left: auto;
+    background: #262727;
+    color: #f7f8fb;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.contact-form input.primary-btn:hover {
+    background: transparent;
+    color: #262727;
+}
+.contact-form input.primary-btn:active {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+}
+
+/* responsive of .contact-form section */
+
+@media screen and (max-width: 768px) {
+    
+    .contact-form {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .contact-form {
+        padding: 100px 30px;
+    }
+    .contact-form input[name=name],
+    .contact-form input[name=number],
+    .contact-form input[name=email],
+    .contact-form select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .contact-form {
+        padding: 100px 20px;
+    }
+}
+
+
+/* social-links-block CSS */
+
+.social-links-block {
+    padding: 100px 100px;
+    background: #306cdb;
+}
+.social-link-wrap {
+    text-align: center;
+}
+.social-link-wrap a {
+    display: inline-block;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid #f7f8fb;
+    border-radius: 50%;
+    margin: 10px;
+    color: #306cdb;
+    background: #f7f8fb;
+    position: relative;
+    z-index: 1;
+}
+.social-link-wrap a::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    background: #f7f8fb41;
+    z-index: -1;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.social-link-wrap a:hover {
+    color: #306cdb;
+}
+.social-link-wrap a:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.social-link-wrap a:active::before {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+
+/* responsive of .social-links-block section */
+
+@media screen and (max-width: 768px) {
+    
+    .social-links-block {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .social-links-block {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .social-links-block {
+        padding: 100px 20px;
+    }
+    .social-link-wrap a {
+        font-size: 22px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+
+/* location-block CSS */
+
+.location-block iframe {
+    display: block;
+    width: 100%;
+    height: 60vh;
+}
+
+
+

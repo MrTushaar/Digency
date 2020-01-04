@@ -1,0 +1,276 @@
+
+/* ============================
+
+CSS Index :::
+    -hero-area CSS
+    -team section CSS
+    -products section CSS
+    -quote section CSS
+    -cta section CSS
+
+==============================*/
+
+
+
+/* hero-area CSS */
+
+.hero-container {
+    background: #262727 url('../images/teamcasual.jpg') no-repeat center center;
+    background-size: cover !important;
+}
+
+
+/* team section CSS */
+
+.team {
+    padding: 100px 100px;
+
+}
+.team h1 {
+    text-align: center;
+}
+.team-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.member-img {
+    height: 250px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center 0 !important;
+    border-radius: 5px;
+    position: relative;
+}
+.member-socials {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 108, 219, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.member-img:hover .member-socials {
+    opacity: 1;
+}
+.member-socials a {
+    color: #f7f8fb;
+    font-size: 20px;
+    margin: 10px;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.member-socials a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.member-img:hover .member-socials a {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+.single-member h5.mini-title {
+    margin-top: 20px;
+    opacity: 1;
+}
+.single-member h5.mini-title span {
+    opacity: 0.75;
+    display: block;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+/* responsive of team section */
+
+@media screen and (max-width: 900px) {
+    .team-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .team {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .team {
+        padding: 100px 30px;
+    }
+    .team-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .team {
+        padding: 100px 20px;
+    }
+}
+
+
+/* products section CSS */
+
+.product-img {
+    background: #2627270c url('../images/member-2.png') no-repeat;
+    background-size: 100%;
+}
+.product-content {
+    background: #2627270c;
+    color: #262727;
+}
+.product-content i.quote-sign {
+    font-size: 40px;
+    display: block;
+    color: #306cdb;
+    margin-bottom: 10px;
+}
+.product-content h1 {
+    font-family: 'Cormorant', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.product-content .owner-sign {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.product-content .mini-title {
+    text-align: left;
+    opacity: 1;
+}
+.product-content .mini-title span {
+    opacity: 0.75;
+    display: block;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .products {
+        display: block;
+    }
+    .product-img {
+        display: block;
+        background: #2627270c url('../images/member-2.png') no-repeat center center;
+        background-size: auto 100%;
+        height: 500px;
+    }
+}
+
+
+/* quote section CSS */
+
+section.quote {
+    padding: 100px 100px;
+}
+.quote .quote-icon {
+    font-size: 40px;
+    display: block;
+    color: #306cdb;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.quote h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.quote h4 {
+    text-align: center;
+    margin: 10px 10rem 30px 10rem;
+    opacity: 0.75;
+}
+.quote h5 {
+    opacity: 1;
+}
+
+/* responsive of quote section */
+
+@media screen and (max-width: 850px) {
+    
+    .quote h4 {
+        margin: 10px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.quote {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.quote {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section.quote {
+        padding: 100px 20px;
+    }
+}
+
+
+/* cta section CSS */
+
+section.cta {
+    background: #2627270c url("../images/about-hero.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 100px;
+    position: relative;
+    color: #f7f8fb;
+    z-index: 1;
+}
+section.cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 39, 39, 0.8);
+    z-index: -1;
+}
+
+/* responsive of cta section */
+
+@media screen and (max-width: 768px) {
+    section.cta {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.cta {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section.cta {
+        padding: 100px 20px;
+    }
+}

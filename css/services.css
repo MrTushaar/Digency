@@ -1,0 +1,244 @@
+
+/* ============================
+
+CSS Index :::
+    -hero-area CSS
+    -about CSS
+    -services-overview CSS
+    -products CSS
+    -why-us CSS
+    -cta section CSS
+
+==============================*/
+
+
+
+/* hero-area CSS */
+
+.hero-container {
+    background: #262727 url('../images/services-hero.jpg') no-repeat 0 0;
+    background-size: cover !important;
+}
+
+
+/* about CSS */
+
+.about .mini-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.single-work hr {
+    width: 60px;
+    background-color: #306cdb;
+    height: 2px;
+    margin-left: 0;
+}
+
+/* responsive of about section */
+
+@media screen and (max-width: 480px) {
+
+    .about .mini-title {
+        text-align: center;
+    }
+    .single-work hr {
+        margin-left: auto;
+    }
+}
+
+
+/* services-overview CSS */
+
+.services-overview {
+    background: #306cdb;
+    color: #f7f8fb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 100px 100px;
+}
+.single-overview {
+    text-align: center;
+}
+.overview-icon {
+    display: block;
+    margin-bottom: 30px;
+}
+.overview-icon img {
+    width: 50px;
+    height: auto;
+    margin: auto;
+}
+.single-overview h4 {
+    margin-bottom: 10px;
+}
+
+/* responsive of services-overview */
+
+@media screen and (max-width: 960px) {
+    .services-overview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-overview {
+        padding: 100px 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-overview {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .services-overview {
+        padding: 100px 20px;
+    }
+}
+
+
+/* products CSS */
+
+section.products {
+    padding: 100px 100px;
+}
+.product-img {
+    background: #f7f8fb url("../images/iMac.png") no-repeat 0;
+    background-size: 100%;
+}
+.product-content {
+    background: #f7f8fb;
+    color: #262727;
+    padding: 0;
+}
+.product-content h2 {
+    margin-bottom: 20px;
+}
+.product-content ul {
+    margin-bottom: 20px;
+    list-style: none;
+}
+.product-content ul li {
+    opacity: 0.75;
+    padding: 10px;
+    line-break: loose;
+    border-bottom: 1px solid #26272725;
+}
+.product-content ul li:last-child {
+    border: none;
+}
+.product-content ul li i {
+    margin-right: 5px;
+    color: #306cdb;
+}
+
+/* responsive of products section */
+
+@media screen and (max-width: 980px) {
+    
+    section.products {
+        display: block;
+    }
+    .product-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.products {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.products {
+        padding: 100px 30px;
+    }
+    .product-content a.primary-btn {
+        display: table;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section.products {
+        padding: 100px 20px;
+    }
+}
+
+
+/* why-us CSS */
+
+.why-us {
+    padding: 100px 100px;
+    background: #2627270c;
+}
+.why-us h1 {
+    text-align: center  
+}
+.why-us-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.single-wu {
+    text-align: center;
+}
+.wu-img {
+    background-size: cover !important;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.single-wu h4 {
+    margin-bottom: 10px;
+}
+
+/* responsive of why-us section */
+
+@media screen and (max-width: 900px) {
+    
+    .why-us-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .single-wu:nth-child(3) {
+        width: 100%;
+        margin: 0 calc(50% + 25px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-us {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .why-us {
+        padding: 100px 30px;
+    }
+    .why-us-wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-wu:nth-child(3) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .why-us {
+        padding: 100px 20px;
+    }
+}
+
+
+/* cta section CSS */
+
+section.cta {
+    background: #f7f8fb;
+}
